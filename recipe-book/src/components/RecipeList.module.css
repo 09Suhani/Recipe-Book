@@ -1,0 +1,61 @@
+/* Styles for the main container of the recipe list */
+.recipeList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+}
+
+/* Styles for each recipe card */
+.recipeCard {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styles for the recipe title */
+.cardTitle {
+  font-size: 1.5em;
+  color: #333;
+}
+
+/* Styles for the recipe image */
+.cardImage {
+  width: 100%; /* Image covers the card width */
+  height: 200px; /* Set a height to maintain a uniform size */
+  object-fit: cover; /* Ensure the image fills the area without distortion */
+  border-radius: 5px;
+  margin-bottom: 15px; /* Add space below the image */
+}
+
+/* Ensure button aligns properly */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* For smaller screens (e.g., tablets and mobiles) */
+@media (max-width: 768px) {
+  .recipeCard {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .cardImage {
+    width: 100%; /* Full width */
+    height: auto; /* Dynamic height */
+  }
+}
+/* For larger screens (e.g., desktops) */
+@media (min-width: 1024px) {
+  .cardImage {
+    height: 300px; /* Larger images for wider screens */
+  }
+}

@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Ensure the html and body stretch to full height */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+/* Background image styling */
+body {
+  position: relative;
+  min-height: 100vh;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./images/Background.jpg") no-repeat center center fixed;
+  background-size: cover; /* Ensures the image covers the entire background */
+  opacity: 0.5; /* Adjust this value to make the image dimmer */
+  z-index: -1; /* Ensure it stays behind other content*/
+}
+.bg-overlay {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* White overlay with slight transparency */
+  backdrop-filter: blur(5px); /* Adds a blur effect to the background */
+  min-height: 100vh; /* Ensures the overlay covers the full viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form container */
+form {
+  max-width: 600px; /* Set a max width for the form */
+  width: 100%; /* Ensure the form takes full width up to max-width */
+  padding: 30px;
+  border-radius: 8px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* White background with transparency */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow around form */
+}
+/* Overall container to prevent overlaps */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between elements */
+  overflow: hidden; /* Prevent overflow */
+  padding: 10px;
+  min-height: 100vh; /* Ensure full screen height */
+}
+
+/* Styling for form inputs */
+input.form-control,
+textarea.form-control {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 12px;
+  transition: all 0.3s ease; /* Smooth hover/focus effect */
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: #014106; /* Theme color for focus */
+  box-shadow: 0 0 5px rgba(1, 109, 28, 0.4); /* Glow effect */
+}
+
+button.btn-primary {
+  background-color: #1e8f2d;
+  border: none;
+  transition: all 0.3s ease; /* Hover effect */
+}
+
+button.btn-primary:hover {
+  background-color: #014106;
+  transform: scale(1.05); /* Small scaling effect */
+}
+
+/* Custom file input styling */
+input[type="file"] {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+input[type="file"]:hover {
+  border-color: #014106;
+}
+
+textarea {
+  resize: none; /* Disable resizing completely */
+  height: 100px; /* Set a fixed height */
+  max-height: 150px; /* Limit maximum height */
+  width: 100%; /* Ensure it fits within its container */
+  box-sizing: border-box; /* Account for padding in dimensions */
+  padding: 10px;
+}
+
+/* Search box  */
+.search-container {
+  width: 100%; /* Ensure the container spans the full width */
+  display: flex;
+  flex-direction: column; /* Stack heading and input vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 10px; /* Add spacing between the heading and input */
+  margin-top: 20px; /* Add top margin for separation */
+}
+
+.search-box {
+  width: 50%; /* Smaller search box */
+  max-width: 500px; /* Optional: Limit the box width */
+  padding: 10px 15px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #014106; /* Ensure border is visible */
+  text-align: center; /* Center-align placeholder text */
+}
+
+/* Hover Effect */
+.search-box:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Elevated shadow */
+}
+
+/* Focus Effect */
+.search-box:focus {
+  background-color: rgba(
+    240,
+    255,
+    240,
+    0.95
+  ); /* Light green focus background */
+  border-color: #1e8f2d; /* Highlighted color */
+  outline: none; /* Remove the default browser outline */
+}
+
+/* Placeholder Text Styling */
+.search-box::placeholder {
+  color: #aaa; /* Light gray for placeholder text */
+  font-style: italic; /* Italicized placeholder */
+}

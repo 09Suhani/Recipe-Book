@@ -1,0 +1,30 @@
+.recipeDetailCard {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex; /* For horizontal layout */
+  flex-direction: column; /* Default column layout */
+  justify-content: space-between; /* Space out elements */
+  align-items: center; /* Center-align content */
+  max-width: 800px; /* Restrict card width for better readability */
+  margin: 0 auto; /* Center the card on the page */
+}
+
+/* Recipe Title Styling */
+.recipeTitle {
+  font-size: 2em;
+  color: #04630c;
+  margin-bottom: 15px;
+  text-align: center; /* Center the title for better focus */
+}
+
+/* Recipe Image Styling */
+.recipeImage {
+  width: 100%; /* Full width of the container */
+  height: 300px; /* Uniform height */
+  object-fit: cover; /* Ensures the image fills the container without distortion */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}

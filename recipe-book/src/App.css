@@ -1,0 +1,16 @@
+.back-to-top {
+  position: fixed;
+  bottom: 20px; /* Adjust distance from bottom */
+  left: 20px; /* Adjust distance from the right corner */
+  z-index: 1000; /* Ensure it appears above other content */
+  padding: 15px 20px; /* Make button larger */
+  font-size: 20px; /* Larger text */
+  border-radius: 50%; /* Make the button circular */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for visibility */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.back-to-top:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  background-color: #014106; /* Darker green for hover */
+}
