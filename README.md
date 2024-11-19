@@ -1,7 +1,7 @@
-RECIPE BOOK
+RECIPE BOOK:
 A web application built with React and Vite, allowing users to create, view, and manage recipes seamlessly. This project demonstrates essential CRUD operations, responsive design, and local storage for data persistence.
 
-- Features
+- Features:
 
 1. Add Recipes:
    Users can input recipe details, including name, ingredients, steps, and an image.
@@ -21,7 +21,7 @@ A web application built with React and Vite, allowing users to create, view, and
 6. User-Friendly Navigation:
    Includes "Back to Top" and intuitive navigation buttons for a better user experience.
 
-- Technologies Used
+- Technologies Used:
 
 1. Frontend:
    React (with Vite for fast development), Bootstrap for styling, and CSS Modules for component-specific customizations.
@@ -35,13 +35,13 @@ A web application built with React and Vite, allowing users to create, view, and
 4. Responsive Design:
    Ensures a seamless experience across various screen sizes.
 
-- Screenshots
+- Screenshots:
 
-![Add Recipes](./screenshots/AddRecipe.png "Add Recipes to Recipe Book")
+![Add Recipes](./recipe-book/src/screenshots/AddRecipe.png "Add Recipes to Recipe Book")
 
-![Recipe Detail](./screenshots/DetailRecipe.png "Detailed View of a Recipe")
+![Recipe Detail](./recipe-book/src/screenshots/DetailRecipe.png "Detailed View of a Recipe")
 
-- Installation
+- Installation:
   To run the Recipe Book locally, follow these steps:
 
 1. Clone the repository:
